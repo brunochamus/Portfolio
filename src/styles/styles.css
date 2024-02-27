@@ -1,0 +1,922 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  height: 4.5rem;
+  font-family: "Onest", sans-serif;
+  font-weight: 500;
+}
+nav .container-fluid img {
+  height: 4.5rem;
+  margin: auto;
+}
+nav .offcanvas-body a {
+  color: #fff;
+  font-size: 1.1rem;
+}
+nav .offcanvas-body a:hover {
+  color: #4c177a;
+}
+
+body {
+  background: radial-gradient(#050a41, #030a1d);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home {
+  margin: 6rem 15rem;
+}
+.home .nameImg {
+  display: flex;
+  align-items: center;
+}
+.home .nameImg h1 {
+  margin-top: 4.5rem;
+  font-size: 3.9rem;
+  color: #fff;
+  font-family: "Onest", sans-serif;
+  font-weight: 700;
+}
+.home .nameImg .photoProfile {
+  height: 20rem;
+  position: relative;
+  margin-left: 3rem;
+}
+.home .openToWork {
+  text-transform: uppercase;
+  width: 160px;
+  height: 28px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  background: #211b2b;
+  transition: 0.1s;
+  top: -60px;
+}
+.home .openToWork::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(90, 90, 92) 17.8%, rgb(29, 106, 109) 100.2%);
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.home .shortDescrip {
+  font-family: "Onest", sans-serif;
+  font-size: 23px;
+  width: 51rem;
+  margin-top: 2rem;
+  color: #a09a9a;
+  position: relative;
+  top: -70px;
+}
+.home .buttonsHome {
+  top: -50px;
+  position: relative;
+}
+.home .buttonsHome a {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 2rem;
+  background-color: #211b2b;
+  padding: 7px 15px;
+  border-radius: 50px;
+  border-style: dotted solid #fff;
+  transition: all 390ms ease-in-out;
+  font-family: "Onest", sans-serif;
+}
+.home .buttonsHome a i {
+  margin-right: 10px;
+}
+.home .buttonsHome a:hover {
+  background: linear-gradient(0deg, #4c177a, #330099);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4), inset 0px -2px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 2px rgba(255, 255, 255, 0.2), 0px 0px 20px 0px #590f92;
+  transform: translateY(-2px);
+}
+
+.skills h2 {
+  color: #fff;
+  margin: 0rem 15rem;
+  font-size: 2rem;
+  font-family: "Onest", sans-serif;
+  font-weight: 600;
+}
+.skills h2 i {
+  margin-right: 0.5rem;
+}
+.skills .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+.skills .logo .row {
+  display: flex;
+}
+.skills .logo .row svg {
+  height: 4rem;
+  width: auto;
+  margin: 1rem;
+}
+
+.projects {
+  margin: 6rem 0rem 0rem 14rem;
+}
+.projects h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Onest", sans-serif;
+  font-weight: 600;
+}
+.projects h2 i {
+  margin-right: 0.5rem;
+}
+.projects .content {
+  display: flex;
+  font-family: "Onest", sans-serif;
+  margin-top: 5rem;
+}
+.projects .content img {
+  width: 32rem;
+  height: 17rem;
+  border-radius: 10px;
+}
+.projects .content .descrProj {
+  margin: 0rem 5rem;
+}
+.projects .content .descrProj h3 {
+  color: #fff;
+  margin: 1rem 0rem;
+}
+.projects .content .descrProj .tool {
+  width: 10px;
+  height: 28px;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  background: #211b2b;
+  transition: 0.1s;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.projects .content .descrProj .tool::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(30, 30, 42) 17.8%, rgb(14, 53, 54) 100.2%);
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.projects .content .descrProj p {
+  color: #fff;
+  margin-top: 1.5rem;
+}
+.projects .content .descrProj .btnProject {
+  top: 10px;
+  position: relative;
+}
+.projects .content .descrProj .btnProject a {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+  background-color: #211b2b;
+  padding: 7px 15px;
+  border-radius: 50px;
+  border-style: dotted solid #fff;
+  transition: all 390ms ease-in-out;
+  font-family: "Onest", sans-serif;
+}
+.projects .content .descrProj .btnProject a i {
+  margin-right: 10px;
+}
+.projects .content .descrProj .btnProject a:hover {
+  background: linear-gradient(0deg, #4c177a, #330099);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4), inset 0px -2px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 2px rgba(255, 255, 255, 0.2), 0px 0px 20px 0px #590f92;
+  transform: translateY(-2px);
+}
+
+.contentAboutMe {
+  margin: 6rem 15rem;
+}
+.contentAboutMe h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Onest", sans-serif;
+  font-weight: 600;
+}
+.contentAboutMe h2 i {
+  margin-right: 0.5rem;
+}
+.contentAboutMe .description {
+  display: flex;
+}
+.contentAboutMe .description p {
+  color: #fff;
+  font-family: "Onest", sans-serif;
+  font-size: 1.2rem;
+  width: 60%;
+  margin-top: 1.5rem;
+}
+.contentAboutMe .description .card {
+  width: 230px;
+  height: auto;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  margin-left: 10rem;
+}
+.contentAboutMe .description .card .card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+.contentAboutMe .description .card .circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#4c177a, #330099);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+.contentAboutMe .description .card .circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+.contentAboutMe .description .card .circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
+.contentAboutMe .description .card:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+.contentAboutMe .btnAbout {
+  top: -50px;
+  position: relative;
+}
+.contentAboutMe .btnAbout a {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 2rem;
+  background-color: #211b2b;
+  padding: 7px 15px;
+  border-radius: 50px;
+  border-style: dotted solid #fff;
+  transition: all 390ms ease-in-out;
+  font-family: "Onest", sans-serif;
+}
+.contentAboutMe .btnAbout a i {
+  margin-right: 10px;
+}
+.contentAboutMe .btnAbout a:hover {
+  background: linear-gradient(0deg, #4c177a, #330099);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4), inset 0px -2px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 2px rgba(255, 255, 255, 0.2), 0px 0px 20px 0px #590f92;
+  transform: translateY(-2px);
+}
+
+.education {
+  margin: 6rem 14rem;
+}
+.education h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Onest", sans-serif;
+  font-weight: 600;
+}
+.education h2 i {
+  margin-right: 0.5rem;
+}
+.education .titleEducation {
+  margin: 0rem 2rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  font-size: "Onest", sans-serif;
+}
+.education .titleEducation i {
+  color: #4c177a;
+  margin-right: 1rem;
+}
+.education .parts {
+  display: flex;
+  margin: 0rem 2rem;
+  text-align: center;
+  justify-content: center;
+}
+.education .parts a {
+  display: block;
+  width: 15rem;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  padding: 0.5em 0.5em;
+  color: #ffedd3;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 2px solid #4c177a;
+  margin: 1rem 5rem;
+  font-family: "Onest", sans-serif;
+}
+.education .parts a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #a09a9a;
+  transition: 0.5s ease;
+}
+.education .parts a:hover {
+  color: #fff;
+  transition-delay: 0.5s;
+}
+.education .parts a:hover::before {
+  width: 100%;
+}
+.education .parts a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #4c177a;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+.education .parts a:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: #330099;
+}
+
+.footer {
+  background-color: #211b2b;
+  height: 14rem;
+  display: flex;
+  font-family: "Onest", sans-serif;
+}
+.footer .copy {
+  width: 50%;
+  text-align: center;
+}
+.footer .copy img {
+  width: 10rem;
+  margin-top: 0.5rem;
+}
+.footer .copy h2 {
+  font-size: 1.1rem;
+  color: #fff;
+}
+.footer .copy a {
+  text-decoration: none;
+  color: #a09a9a;
+  font-size: 1rem;
+}
+.footer .contactFooter {
+  width: 50%;
+  text-align: center;
+}
+.footer .contactFooter h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 2rem;
+  color: #a09a9a;
+}
+.footer .contactFooter a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.footer .contactFooter a i {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .home {
+    margin: 6.5rem 15rem;
+  }
+  .home .nameImg h1 {
+    margin-top: -1.5rem;
+    font-size: 3.5rem;
+  }
+  .home .nameImg .photoProfile {
+    height: 15rem;
+    margin-left: auto;
+  }
+  .home .openToWork {
+    top: -40px;
+  }
+  .home .shortDescrip {
+    width: auto;
+    font-size: 18px;
+  }
+  .contentAboutMe {
+    margin: 6rem 15rem;
+  }
+  .contentAboutMe .description {
+    display: flex;
+  }
+  .contentAboutMe .description p {
+    font-size: 1.1rem;
+  }
+  .contentAboutMe .description .card {
+    height: 230px;
+    width: auto;
+    margin-left: 5rem;
+    background-color: #050a41;
+  }
+  .contentAboutMe .description .card .circle {
+    width: 80px;
+    height: 80px;
+  }
+  .contentAboutMe .btnAbout {
+    top: 5px;
+    position: relative;
+  }
+  .projects .content {
+    margin-bottom: 7rem;
+  }
+  .projects .content img {
+    width: 25rem;
+    height: 11rem;
+  }
+  .projects .content .descrProj {
+    margin: -1rem 1rem;
+  }
+  .projects .content .descrProj h3 {
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .projects .content .descrProj .tool {
+    width: 10px;
+    height: 28px;
+    font-size: 11px;
+    padding: 0.5rem;
+    margin: 0.8rem;
+  }
+  .projects .content .descrProj p {
+    margin-top: 1rem;
+  }
+  .projects .content .descrProj .btnProject a {
+    font-size: 13px;
+  }
+  .projects .content .descrProj .btnProject a i {
+    margin-right: 3px;
+  }
+  .education {
+    margin: 6rem 14rem;
+  }
+  .education h2 {
+    font-size: 1.8rem;
+  }
+  .education .titleEducation {
+    margin: 0rem 2rem;
+    font-size: 1.2rem;
+  }
+  .education .parts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0rem 2rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .education .parts a {
+    display: block;
+    width: 15rem;
+    font-size: 17px;
+    padding: 0.1em 0.1em;
+    margin: 1rem 1rem;
+  }
+}
+@media (max-width: 967px) {
+  .home {
+    margin: 8rem 10rem;
+  }
+  .home .nameImg h1 {
+    margin-top: -3rem;
+    font-size: 3rem;
+  }
+  .home .nameImg .photoProfile {
+    height: 12rem;
+  }
+  .home .openToWork {
+    width: 120px;
+    font-size: 12px;
+  }
+  .home .shortDescrip {
+    width: auto;
+    font-size: 18px;
+  }
+  .home .buttonsHome a {
+    font-size: 13px;
+    margin-right: auto;
+    padding: 7px 11px;
+  }
+  .skills h2 {
+    margin: 0rem 8.5rem;
+    font-size: 2rem;
+  }
+  .skills h2 i {
+    margin-right: 0.2rem;
+  }
+  .skills .logo .row svg {
+    height: 3rem;
+    width: auto;
+    margin: 1rem;
+  }
+  .contentAboutMe {
+    margin: 6rem 8.5rem;
+  }
+  .contentAboutMe .description {
+    display: flex;
+  }
+  .contentAboutMe .description p {
+    font-size: 1rem;
+    width: 60%;
+    margin-top: 1.5rem;
+  }
+  .contentAboutMe .description .card {
+    height: 210px;
+    width: auto;
+    margin-left: 2rem;
+  }
+  .contentAboutMe .description .card .circle {
+    width: 80px;
+    height: 80px;
+  }
+  .contentAboutMe .btnAbout a {
+    font-size: 13px;
+    margin-right: auto;
+    padding: 7px 11px;
+  }
+  .projects {
+    margin: 6rem 0rem 0rem 8.5rem;
+  }
+  .projects h2 {
+    font-size: 2rem;
+  }
+  .projects h2 i {
+    margin-right: 0.5rem;
+  }
+  .projects .content {
+    margin-bottom: 7rem;
+  }
+  .projects .content img {
+    width: 25rem;
+    height: 11rem;
+  }
+}
+@media (max-width: 683px) {
+  nav .container-fluid img {
+    display: none;
+  }
+  .home {
+    margin: 8rem 5rem;
+  }
+  .home .nameImg h1 {
+    margin-top: -3rem;
+    font-size: 2.3rem;
+  }
+  .home .nameImg .photoProfile {
+    height: 10rem;
+  }
+  .home .openToWork {
+    width: 120px;
+    font-size: 11px;
+  }
+  .home .shortDescrip {
+    font-size: 16px;
+  }
+  .home .buttonsHome a {
+    padding: 5px 9px;
+  }
+  .skills h2 {
+    margin: 0rem 5rem;
+    font-size: 1.8rem;
+  }
+  .skills h2 i {
+    margin-right: 0.3rem;
+  }
+  .skills .logo {
+    align-items: center;
+    margin: 2rem auto;
+  }
+  .skills .logo .row svg {
+    height: 2.5rem;
+    margin: 0.2rem;
+  }
+  .contentAboutMe {
+    margin: 6rem 5rem;
+  }
+  .contentAboutMe h2 {
+    font-size: 1.8rem;
+  }
+  .contentAboutMe h2 i {
+    margin-right: 0.5rem;
+  }
+  .contentAboutMe .description {
+    display: flex;
+  }
+  .contentAboutMe .description p {
+    font-size: 1rem;
+    width: 60%;
+    margin-top: 1.5rem;
+  }
+  .contentAboutMe .description .card {
+    height: 210px;
+    width: auto;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .contentAboutMe .description .card .circle {
+    width: 70px;
+    height: 70px;
+  }
+  .projects {
+    margin: 6rem 0rem 0rem 5rem;
+  }
+  .projects h2 {
+    font-size: 1.8rem;
+  }
+  .projects h2 i {
+    margin-right: 0.5rem;
+  }
+  .projects .content {
+    display: block;
+  }
+  .projects .content img {
+    width: 22rem;
+    height: 11rem;
+  }
+  .projects .content .descrProj {
+    margin: 1.5rem 1rem;
+  }
+  .projects .content .descrProj h3 {
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .projects .content .descrProj p {
+    font-size: 0.8rem;
+  }
+  .education {
+    margin: 6rem 5rem;
+  }
+  .education h2 {
+    font-size: 1.8rem;
+  }
+  .education h2 i {
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 477px) {
+  .home {
+    margin: 8.5rem 0rem 3rem 1.5rem;
+  }
+  .home .nameImg h1 {
+    margin-top: -3rem;
+    font-size: 2.3rem;
+  }
+  .home .openToWork {
+    top: -40px;
+  }
+  .home .shortDescrip {
+    font-size: 16px;
+    margin-top: 3.5rem;
+  }
+  .home .buttonsHome a {
+    padding: 5px 9px;
+  }
+  .skills h2 {
+    margin: 0rem 1.5rem;
+    font-size: 1.4rem;
+  }
+  .skills h2 i {
+    margin-right: 0.3rem;
+  }
+  .skills .logo {
+    align-items: center;
+    margin: 2rem auto;
+  }
+  .skills .logo .row svg {
+    height: 2.5rem;
+    margin: 0.3rem;
+  }
+  .contentAboutMe {
+    margin: 6rem 1.5rem;
+  }
+  .contentAboutMe h2 {
+    font-size: 1.4rem;
+  }
+  .contentAboutMe h2 i {
+    margin-right: 0.5rem;
+  }
+  .contentAboutMe .description {
+    display: block;
+  }
+  .contentAboutMe .description p {
+    font-size: 1rem;
+    width: auto;
+    margin-top: 1.5rem;
+  }
+  .contentAboutMe .description .card {
+    width: 200px;
+    height: auto;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .contentAboutMe .description .card .circle {
+    width: 70px;
+    height: 70px;
+  }
+  .contentAboutMe .btnAbout {
+    top: 40px;
+    position: relative;
+  }
+  .projects {
+    margin: 6rem 0rem 0rem 1.5rem;
+  }
+  .projects h2 {
+    font-size: 1.4rem;
+  }
+  .projects .content {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .projects .content img {
+    width: 22rem;
+    height: 11rem;
+    margin: 0rem;
+  }
+  .projects .content .descrProj {
+    margin: 1.5rem 1rem;
+  }
+  .projects .content .descrProj h3 {
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+  .projects .content .descrProj p {
+    font-size: 0.8rem;
+  }
+  .projects .content .descrProj .tool {
+    width: 10px;
+    height: 28px;
+    font-size: 9px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  .education {
+    margin: 6rem 1.5rem;
+  }
+  .education h2 {
+    font-size: 1.4rem;
+  }
+  .education h2 i {
+    margin-right: 0.5rem;
+  }
+  .education .titleEducation {
+    margin: 0rem 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .education .titleEducation i {
+    color: #4c177a;
+    margin-right: 0.5rem;
+  }
+  .footer {
+    height: 14rem;
+  }
+  .footer .copy img {
+    width: 6rem;
+    margin-top: 2.5rem;
+  }
+  .footer .copy h2 {
+    font-size: 0.9rem;
+  }
+  .footer .copy a {
+    font-size: 0.8rem;
+  }
+  .footer .contactFooter h2 {
+    font-size: 1rem;
+    margin-top: 2.2rem;
+  }
+  .footer .contactFooter a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 343px) {
+  .skills h2 {
+    margin: 0rem 1.5rem;
+    font-size: 1.4rem;
+  }
+  .skills h2 i {
+    margin-right: 0.3rem;
+  }
+  .skills .logo {
+    margin: 2rem;
+  }
+  .skills .logo .row svg {
+    height: 2rem;
+    margin: 0.3rem;
+  }
+  .projects .content img {
+    width: 17rem;
+    height: 9rem;
+    margin: 0rem;
+  }
+  .projects .content .descrProj {
+    margin: 1.5rem 1rem;
+  }
+  .contentAboutMe {
+    text-align: center;
+  }
+  .contentAboutMe h2 {
+    font-size: 1.4rem;
+  }
+  .contentAboutMe h2 i {
+    margin-right: 0.5rem;
+  }
+  .contentAboutMe .description {
+    display: block;
+  }
+  .contentAboutMe .description p {
+    font-size: 0.8rem;
+    width: auto;
+    margin-top: 1.5rem;
+  }
+  .contentAboutMe .description .card {
+    width: 200px;
+    height: auto;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .contentAboutMe .description .card .circle {
+    width: 70px;
+    height: 70px;
+  }
+  .contentAboutMe .btnAbout {
+    top: 40px;
+    position: relative;
+  }
+  .education {
+    margin: 6rem 1.5rem;
+  }
+  .education .titleEducation {
+    margin: 0rem 1rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+  .education .titleEducation i {
+    color: #4c177a;
+    margin-right: 0.5rem;
+  }
+  .education .parts {
+    margin: 0rem 0rem;
+  }
+  .education .parts a {
+    width: 13rem;
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=styles.css.map */
