@@ -8,13 +8,14 @@
 }
 
 nav {
-    height: 4.5rem;
+    height: 4rem;
     font-family: $font-onest;
     font-weight: 500;
+    background-color: #030a1dcb;
 
     .container-fluid {
         img {
-            height: 4.5rem;
+            height: 4rem;
             margin: auto;
         }
     }
@@ -30,6 +31,25 @@ nav {
         }
     }
 
+    .navbar-toggler{
+        i{
+            color: $color-font-prim;
+            font-size: 1.5rem;
+        }
+    }
+
+    .offcanvas.show .offcanvas-body {
+        background-color: black;
+    }
+
+    .offcanvas-header{
+        background-color: black;
+
+        .btn-close{
+            color: $color-font-prim;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 body {
@@ -656,6 +676,10 @@ body {
 
 
 @media (max-width: 967px) {
+    //NAVBAR
+    nav {
+        background-color: transparent;
+    }
 
     //HOME
     .home {

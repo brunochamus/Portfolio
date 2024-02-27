@@ -26,28 +26,28 @@
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./img/logo2-sinfondo.png"
                             class="logo-img"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-x"></i></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Sobre Mi</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                            <a class="nav-link" href="#projects">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Proyectos</a>
+                            <a class="nav-link" aria-current="page" href="#aboutMe">Sobre Mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#footer">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </nav>
@@ -61,15 +61,15 @@
         <p class="shortDescrip">Desarrollador Full Stack aficionado por llevar ideas a la realidad mediante desarrollo
             web.</p>
         <div class="buttonsHome">
-            <a href="https://www.linkedin.com/in/bruno-chamus-068308266/"><i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/bruno-chamus-068308266/" target="_blank"><i class="fa-brands fa-linkedin"></i>
                 Linkedin</a>
-            <a href="https://github.com/brunochamus"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="brunochamus01@gmail.com"><i class="fa-solid fa-envelope"></i> Contáctame</a>
+            <a href="https://github.com/brunochamus" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="mailto:brunochamus01@gmail.com"><i class="fa-solid fa-envelope"></i> Contáctame</a>
         </div>
     </header>
 
     <main>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2><i class="fa-solid fa-wrench"></i> Skills</h2>
             <div class="logo">
                 <div class="row">
@@ -211,7 +211,7 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2><i class="fa-solid fa-code"></i> Proyectos</h2>
             <div class="content">
                 <img src="./img/portada-api.png" alt="api">
@@ -226,9 +226,9 @@
                         terceros,
                         paginación y persistencia en base de datos no relacional.</p>
                     <div class="btnProject">
-                        <a href="https://www.linkedin.com/in/bruno-chamus-068308266/"><i class="fa-solid fa-link"></i>
+                        <a href="https://www.linkedin.com/in/bruno-chamus-068308266/" target="_blank"><i class="fa-solid fa-link"></i>
                             Deploy</a>
-                        <a href="https://github.com/brunochamus"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="https://github.com/brunochamus" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
                     </div>
                 </div>
             </div>
@@ -245,9 +245,9 @@
                         mas, construimos esta web de presentación adaptable
                         a distintos dispositivos.</p>
                     <div class="btnProject">
-                        <a href="https://kawaiiuniverse.com.ar/"><i class="fa-solid fa-link"></i>
+                        <a href="https://kawaiiuniverse.com.ar/" target="_blank"><i class="fa-solid fa-link"></i>
                             Deploy</a>
-                        <a href="https://github.com/brunochamus/Kawaii-Universe"><i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/brunochamus/Kawaii-Universe" target="_blank"><i class="fa-brands fa-github"></i>
                             Code</a>
                     </div>
                 </div>
@@ -270,16 +270,16 @@
                         vendedor para preparar este pedido al igual que el
                         formulario de contacto.</p>
                     <div class="btnProject">
-                        <a href="https://pcwordcomponents.netlify.app/"><i class="fa-solid fa-link"></i>
+                        <a href="https://pcwordcomponents.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i>
                             Deploy</a>
-                        <a href="https://github.com/brunochamus/E-commerce-Frontend"><i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/brunochamus/E-commerce-Frontend" target="_blank"><i class="fa-brands fa-github"></i>
                             Code</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contentAboutMe">
+        <section class="contentAboutMe" id="aboutMe">
             <h2><i class="fa-solid fa-user-tie"></i></i> Sobre mi</h2>
             <div class="description">
                 <p>Me llamo Bruno Chamús, vivo en Buenos Aires, Argentina. Empecé en el mundo de la programación a los
@@ -293,42 +293,41 @@
                 </div>
             </div>
             <div class="btnAbout">
-                <a href="./files/cv-bruno-2024.pdf"><i class="fa-solid fa-file-arrow-down"></i>Curriculum Vitae</a>
-                <a href="brunochamus01@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="./files/cv-bruno-2024.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down"></i>Curriculum Vitae</a>
+                <a href="mailto:brunochamus01@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
             </div>
         </section>
 
-        <section class="education">
+        <section class="education" id="education">
             <h2><i class="fa-solid fa-book"></i> Educación</h2>
             <p class="titleEducation"><i class="fa-solid fa-circle"></i> Carrera de Desarrollo Full Stack - Coder House
             </p>
             <div class="parts">
-                <a href="https://www.coderhouse.com/ar/certificados/64125857663c61000244ed2f?lang=es">Desarollo
+                <a href="https://www.coderhouse.com/ar/certificados/64125857663c61000244ed2f?lang=es" target="_blank">Desarollo
                     Web</a>
-                <a href="https://www.coderhouse.com/ar/certificados/645be7ccfe429a0002806229?lang=es">JavaScript</a>
-                <a href="https://www.coderhouse.com/ar/certificados/64dd1a7b55f678b1440da316?lang=es">ReactJS</a>
+                <a href="https://www.coderhouse.com/ar/certificados/645be7ccfe429a0002806229?lang=es" target="_blank">JavaScript</a>
+                <a href="https://www.coderhouse.com/ar/certificados/64dd1a7b55f678b1440da316?lang=es" target="_blank">ReactJS</a>
             </div>
             <div class="parts">
-                <a href="https://www.coderhouse.com/ar/certificados/64dd1a7b55f678ba7a0da318?lang=es">Desarrollo Frontend React</a>
+                <a href="https://www.coderhouse.com/ar/certificados/64dd1a7b55f678ba7a0da318?lang=es" target="_blank">Desarrollo Frontend React</a>
                 <a href="#">Desarrollo Backend</a>
             </div>
         </section>
-
     </main>
 
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="copy">
             <img src="./img/logo2-sinfondo.png" alt="logo">
             <h2><i class="fa-regular fa-copyright"></i> 2024 Bruno Chamús</h2>
-            <a href="https://www.linkedin.com/in/bruno-chamus-068308266/">Portfolio by @Bruno</a>
+            <a href="https://www.linkedin.com/in/bruno-chamus-068308266/" target="_blank">Portfolio by @Bruno</a>
         </div>
         <div class="contactFooter">
             <h2>Contacto</h2>
 
-            <a href="https://www.linkedin.com/in/bruno-chamus-068308266/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-            <a href="https://github.com/brunochamus"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="brunochamus01@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://www.linkedin.com/in/bruno-chamus-068308266/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+            <a href="https://github.com/brunochamus"><i class="fa-brands fa-github" target="_blank"></i> GitHub</a>
+            <a href="mailto:brunochamus01@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
 
         </div>
     </footer>

@@ -4,12 +4,13 @@
 }
 
 nav {
-  height: 4.5rem;
+  height: 4rem;
   font-family: "Onest", sans-serif;
   font-weight: 500;
+  background-color: rgba(3, 10, 29, 0.7960784314);
 }
 nav .container-fluid img {
-  height: 4.5rem;
+  height: 4rem;
   margin: auto;
 }
 nav .offcanvas-body a {
@@ -18,6 +19,20 @@ nav .offcanvas-body a {
 }
 nav .offcanvas-body a:hover {
   color: #4c177a;
+}
+nav .navbar-toggler i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+nav .offcanvas.show .offcanvas-body {
+  background-color: black;
+}
+nav .offcanvas-header {
+  background-color: black;
+}
+nav .offcanvas-header .btn-close {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 body {
@@ -529,6 +544,9 @@ body {
   }
 }
 @media (max-width: 967px) {
+  nav {
+    background-color: transparent;
+  }
   .home {
     margin: 8rem 10rem;
   }
