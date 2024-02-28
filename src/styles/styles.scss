@@ -306,8 +306,9 @@ body {
         }
 
         .card {
-            width: 230px;
-            height: auto;
+            height: 380px;
+            width: auto;
+
             transition: all 0.2s;
             position: relative;
             cursor: pointer;
@@ -361,7 +362,7 @@ body {
     }
 
     .btnAbout {
-        top: -50px;
+        top: 15px;
         position: relative;
 
         a {

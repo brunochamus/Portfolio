@@ -250,8 +250,8 @@ body {
   margin-top: 1.5rem;
 }
 .contentAboutMe .description .card {
-  width: 230px;
-  height: auto;
+  height: 380px;
+  width: auto;
   transition: all 0.2s;
   position: relative;
   cursor: pointer;
@@ -297,7 +297,7 @@ body {
   transform: scale(1.04) rotate(1deg);
 }
 .contentAboutMe .btnAbout {
-  top: -50px;
+  top: 15px;
   position: relative;
 }
 .contentAboutMe .btnAbout a {
